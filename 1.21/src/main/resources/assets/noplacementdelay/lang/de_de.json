@@ -1,0 +1,9 @@
+{
+  "noplacementdelay.state.on": "ein",
+  "noplacementdelay.state.off": "aus",
+  "noplacementdelay.message.status": "No Placement Delay: %s, VerzГ¶gerung: %s Ticks (Vanilla: %s)",
+  "noplacementdelay.message.enabled": "No Placement Delay aktiviert. VerzГ¶gerung: %s Ticks.",
+  "noplacementdelay.message.disabled": "No Placement Delay deaktiviert. Die Vanilla-VerzГ¶gerung von %s Ticks ist wieder aktiv.",
+  "noplacementdelay.message.delay_set": "VerzГ¶gerung auf %s Ticks gesetzt.",
+  "noplacementdelay.message.reloaded": "Konfiguration neu geladen."
+}
