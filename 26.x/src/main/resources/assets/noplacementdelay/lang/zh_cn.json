@@ -1,0 +1,9 @@
+{
+  "noplacementdelay.state.on": "ејЂеђЇ",
+  "noplacementdelay.state.off": "е…ій—­",
+  "noplacementdelay.message.status": "No Placement Delayпјљ%sпјЊе»¶иїџпјљ%s жёёж€Џе€»пј€еЋџз‰€пјљ%sпј‰",
+  "noplacementdelay.message.enabled": "е·ІеђЇз”Ё No Placement DelayгЂ‚е»¶иїџпјљ%s жёёж€Џе€»гЂ‚",
+  "noplacementdelay.message.disabled": "е·Із¦Ѓз”Ё No Placement DelayгЂ‚жЃўе¤ЌеЋџз‰€ %s жёёж€Џе€»е»¶иїџгЂ‚",
+  "noplacementdelay.message.delay_set": "е»¶иїџе·Іи®ѕдёє %s жёёж€Џе€»гЂ‚",
+  "noplacementdelay.message.reloaded": "й…ЌзЅ®е·Ій‡Ќж–°еЉ иЅЅгЂ‚"
+}
