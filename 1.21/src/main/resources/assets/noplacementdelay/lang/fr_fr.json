@@ -1,0 +1,9 @@
+{
+  "noplacementdelay.state.on": "activГ©",
+  "noplacementdelay.state.off": "dГ©sactivГ©",
+  "noplacementdelay.message.status": "No Placement Delay : %s, dГ©lai : %s ticks (vanille : %s)",
+  "noplacementdelay.message.enabled": "No Placement Delay activГ©. DГ©lai : %s ticks.",
+  "noplacementdelay.message.disabled": "No Placement Delay dГ©sactivГ©. Le dГ©lai vanille de %s ticks est rГ©tabli.",
+  "noplacementdelay.message.delay_set": "DГ©lai dГ©fini Г  %s ticks.",
+  "noplacementdelay.message.reloaded": "Configuration rechargГ©e."
+}
