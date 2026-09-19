@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "activé",
+  "nodelay.state.off": "désactivé",
+  "nodelay.cat.blocks": "Placement et utilisation de blocs",
+  "nodelay.cat.villagers": "Commerce avec les villageois",
+  "nodelay.cat.entities": "Autres entités",
+  "nodelay.cat.items": "Objets en l'air",
+  "nodelay.message.status": "NoDelay : %s",
+  "nodelay.message.cat_line": "%s : %s (%s ticks)",
+  "nodelay.message.enabled": "NoDelay activé.",
+  "nodelay.message.disabled": "NoDelay désactivé. Le délai vanille de %s ticks est rétabli.",
+  "nodelay.message.cat_on": "%s : activé (délai %s ticks).",
+  "nodelay.message.cat_off": "%s : désactivé (vanille %s ticks).",
+  "nodelay.message.cat_delay_set": "%s : délai défini à %s ticks.",
+  "nodelay.message.reloaded": "Configuration rechargée."
+}
