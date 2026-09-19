@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "켜짐",
+  "nodelay.state.off": "꺼짐",
+  "nodelay.cat.blocks": "블록 설치 및 사용",
+  "nodelay.cat.villagers": "주민과 거래",
+  "nodelay.cat.entities": "기타 개체",
+  "nodelay.cat.items": "공중에서 아이템 사용",
+  "nodelay.message.status": "NoDelay: %s",
+  "nodelay.message.cat_line": "%s: %s (%s 틱)",
+  "nodelay.message.enabled": "NoDelay가 활성화되었습니다.",
+  "nodelay.message.disabled": "NoDelay가 비활성화되었습니다. 바닐라 %s 틱 지연으로 돌아갑니다.",
+  "nodelay.message.cat_on": "%s: 활성화 (지연 %s 틱).",
+  "nodelay.message.cat_off": "%s: 비활성화 (바닐라 %s 틱).",
+  "nodelay.message.cat_delay_set": "%s: 지연이 %s 틱으로 설정되었습니다.",
+  "nodelay.message.reloaded": "구성을 다시 불러왔습니다."
+}
