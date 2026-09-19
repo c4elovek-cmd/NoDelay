@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.example.nodelay.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"NoDelayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
