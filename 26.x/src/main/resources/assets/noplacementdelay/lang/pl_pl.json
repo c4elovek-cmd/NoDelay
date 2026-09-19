@@ -1,9 +1,0 @@
-{
-  "noplacementdelay.state.on": "wЕ‚Д…czony",
-  "noplacementdelay.state.off": "wyЕ‚Д…czony",
-  "noplacementdelay.message.status": "No Placement Delay: %s, opГіЕєnienie: %s tickГіw (vanilla: %s)",
-  "noplacementdelay.message.enabled": "No Placement Delay wЕ‚Д…czony. OpГіЕєnienie: %s tickГіw.",
-  "noplacementdelay.message.disabled": "No Placement Delay wyЕ‚Д…czony. PrzywrГіcono vanilla opГіЕєnienie %s tickГіw.",
-  "noplacementdelay.message.delay_set": "OpГіЕєnienie ustawione na %s tickГіw.",
-  "noplacementdelay.message.reloaded": "Konfiguracja ponownie wczytana."
-}
