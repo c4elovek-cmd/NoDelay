@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "オン",
+  "nodelay.state.off": "オフ",
+  "nodelay.cat.blocks": "ブロックの設置と使用",
+  "nodelay.cat.villagers": "村人との取引",
+  "nodelay.cat.entities": "その他のエンティティ",
+  "nodelay.cat.items": "空中でのアイテム使用",
+  "nodelay.message.status": "NoDelay: %s",
+  "nodelay.message.cat_line": "%s: %s (%s ティック)",
+  "nodelay.message.enabled": "NoDelay を有効にしました。",
+  "nodelay.message.disabled": "NoDelay を無効にしました。バニラの %s ティック遅延に戻ります。",
+  "nodelay.message.cat_on": "%s: 有効 (遅延 %s ティック)。",
+  "nodelay.message.cat_off": "%s: 無効 (バニラ %s ティック)。",
+  "nodelay.message.cat_delay_set": "%s: 遅延を %s ティックに設定しました。",
+  "nodelay.message.reloaded": "設定を再読み込みしました。"
+}
