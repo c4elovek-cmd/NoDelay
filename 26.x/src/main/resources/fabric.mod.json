@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "noplacementdelay",
+	"version": "${version}",
+	"name": "No Placement Delay",
+	"description": "Removes the vanilla 4 tick right-click cooldown (Minecraft#rightClickDelay) that limits how fast you can place blocks (and use items) while holding the use button. Configurable delay and on/off. Client-side only. Supports Minecraft 26.1-26.3 and 1.21-1.21.11. Localized into 14 languages.",
+	"authors": [
+		"Stepan"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/noplacementdelay/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.noplacementdelay.NoPlacementDelayClient"
+		]
+	},
+	"mixins": [
+		"noplacementdelay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": ">=26.1 <=26.3",
+		"java": ">=25"
+	},
+	"recommends": {
+		"fabric-api": "*"
+	}
+}
