@@ -1,0 +1,9 @@
+{
+  "noplacementdelay.state.on": "activado",
+  "noplacementdelay.state.off": "desactivado",
+  "noplacementdelay.message.status": "No Placement Delay: %s, retardo: %s ticks (vainilla: %s)",
+  "noplacementdelay.message.enabled": "No Placement Delay activado. Retardo: %s ticks.",
+  "noplacementdelay.message.disabled": "No Placement Delay desactivado. Se restaura el retardo vainilla de %s ticks.",
+  "noplacementdelay.message.delay_set": "Retardo establecido en %s ticks.",
+  "noplacementdelay.message.reloaded": "ConfiguraciГіn recargada."
+}
