@@ -1,9 +1,0 @@
-{
-  "noplacementdelay.state.on": "aГ§Д±k",
-  "noplacementdelay.state.off": "kapalД±",
-  "noplacementdelay.message.status": "No Placement Delay: %s, gecikme: %s tick (vanilya: %s)",
-  "noplacementdelay.message.enabled": "No Placement Delay aГ§Д±ldД±. Gecikme: %s tick.",
-  "noplacementdelay.message.disabled": "No Placement Delay kapatД±ldД±. Vanilya %s tick gecikmesi geri geldi.",
-  "noplacementdelay.message.delay_set": "Gecikme %s tick olarak ayarlandД±.",
-  "noplacementdelay.message.reloaded": "YapД±landД±rma yeniden yГјklendi."
-}
