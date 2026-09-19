@@ -97,4 +97,4 @@ do whatever you want with it.
 ## Download
 
 - [Modrinth](https://modrinth.com/mod/nodelay-mod)
-- [GitHub Releases](https://github.com/c4elovek-cmd/NoPlacementDelay/releases)
+- [GitHub Releases](https://github.com/c4elovek-cmd/NoDelay/releases)
