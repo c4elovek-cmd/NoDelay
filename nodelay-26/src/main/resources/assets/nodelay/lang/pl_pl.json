@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "włączony",
+  "nodelay.state.off": "wyłączony",
+  "nodelay.cat.blocks": "Stawianie i używanie bloków",
+  "nodelay.cat.villagers": "Handel z osadnikami",
+  "nodelay.cat.entities": "Inne istoty",
+  "nodelay.cat.items": "Przedmioty w powietrzu",
+  "nodelay.message.status": "NoDelay: %s",
+  "nodelay.message.cat_line": "%s: %s (%s ticków)",
+  "nodelay.message.enabled": "NoDelay włączony.",
+  "nodelay.message.disabled": "NoDelay wyłączony. Przywrócono vanilla opóźnienie %s ticków.",
+  "nodelay.message.cat_on": "%s: włączony (opóźnienie %s ticków).",
+  "nodelay.message.cat_off": "%s: wyłączony (vanilla %s ticków).",
+  "nodelay.message.cat_delay_set": "%s: opóźnienie ustawione na %s ticków.",
+  "nodelay.message.reloaded": "Konfiguracja ponownie wczytana."
+}
