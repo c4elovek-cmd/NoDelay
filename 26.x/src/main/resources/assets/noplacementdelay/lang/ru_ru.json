@@ -1,9 +1,0 @@
-{
-  "noplacementdelay.state.on": "РІРєР»",
-  "noplacementdelay.state.off": "РІС‹РєР»",
-  "noplacementdelay.message.status": "No Placement Delay: %s, Р·Р°РґРµСЂР¶РєР°: %s С‚РёРє(РѕРІ) (РІ РІР°РЅРёР»Рё: %s)",
-  "noplacementdelay.message.enabled": "РњРѕРґ РІРєР»СЋС‡С‘РЅ. Р—Р°РґРµСЂР¶РєР°: %s С‚РёРє(РѕРІ).",
-  "noplacementdelay.message.disabled": "РњРѕРґ РІС‹РєР»СЋС‡РµРЅ вЂ” СЂР°Р±РѕС‚Р°РµС‚ РІР°РЅРёР»СЊРЅР°СЏ Р·Р°РґРµСЂР¶РєР° РІ %s С‚РёРє(РѕРІ).",
-  "noplacementdelay.message.delay_set": "Р—Р°РґРµСЂР¶РєР°: %s С‚РёРє(РѕРІ).",
-  "noplacementdelay.message.reloaded": "РљРѕРЅС„РёРі РїРµСЂРµС‡РёС‚Р°РЅ."
-}
