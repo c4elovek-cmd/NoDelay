@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "on",
+  "nodelay.state.off": "off",
+  "nodelay.cat.blocks": "Block placement & use",
+  "nodelay.cat.villagers": "Villager trading",
+  "nodelay.cat.entities": "Other entities",
+  "nodelay.cat.items": "Items in air",
+  "nodelay.message.status": "NoDelay: enabled=%s",
+  "nodelay.message.cat_line": "%s: %s (%s ticks)",
+  "nodelay.message.enabled": "NoDelay enabled.",
+  "nodelay.message.disabled": "NoDelay disabled. Vanilla %s-tick delay restored.",
+  "nodelay.message.cat_on": "%s: enabled (delay %s ticks).",
+  "nodelay.message.cat_off": "%s: disabled (vanilla %s ticks).",
+  "nodelay.message.cat_delay_set": "%s: delay set to %s ticks.",
+  "nodelay.message.reloaded": "Config reloaded."
+}
