@@ -1,9 +1,0 @@
-{
-  "noplacementdelay.state.on": "attivo",
-  "noplacementdelay.state.off": "disattivato",
-  "noplacementdelay.message.status": "No Placement Delay: %s, ritardo: %s tick (vanilla: %s)",
-  "noplacementdelay.message.enabled": "No Placement Delay attivato. Ritardo: %s tick.",
-  "noplacementdelay.message.disabled": "No Placement Delay disattivato. Ripristinato il ritardo vanilla di %s tick.",
-  "noplacementdelay.message.delay_set": "Ritardo impostato a %s tick.",
-  "noplacementdelay.message.reloaded": "Configurazione ricaricata."
-}
