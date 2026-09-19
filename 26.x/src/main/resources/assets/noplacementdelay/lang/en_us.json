@@ -1,9 +1,0 @@
-{
-  "noplacementdelay.state.on": "on",
-  "noplacementdelay.state.off": "off",
-  "noplacementdelay.message.status": "No Placement Delay: enabled=%s, delay=%s ticks (vanilla=%s)",
-  "noplacementdelay.message.enabled": "No Placement Delay enabled. Delay: %s ticks.",
-  "noplacementdelay.message.disabled": "No Placement Delay disabled. The vanilla %s-tick delay is back.",
-  "noplacementdelay.message.delay_set": "Delay set to %s ticks.",
-  "noplacementdelay.message.reloaded": "Config reloaded."
-}
