@@ -1,0 +1,16 @@
+{
+  "nodelay.state.on": "ein",
+  "nodelay.state.off": "aus",
+  "nodelay.cat.blocks": "Blockplatzierung & -nutzung",
+  "nodelay.cat.villagers": "Handel mit Dorfbewohnern",
+  "nodelay.cat.entities": "Andere Wesen",
+  "nodelay.cat.items": "Gegenstände in der Luft",
+  "nodelay.message.status": "NoDelay: %s",
+  "nodelay.message.cat_line": "%s: %s (%s Ticks)",
+  "nodelay.message.enabled": "NoDelay aktiviert.",
+  "nodelay.message.disabled": "NoDelay deaktiviert. Die Vanilla-Verzögerung von %s Ticks ist wieder aktiv.",
+  "nodelay.message.cat_on": "%s: aktiviert (Verzögerung %s Ticks).",
+  "nodelay.message.cat_off": "%s: deaktiviert (Vanilla %s Ticks).",
+  "nodelay.message.cat_delay_set": "%s: Verzögerung auf %s Ticks gesetzt.",
+  "nodelay.message.reloaded": "Konfiguration neu geladen."
+}
