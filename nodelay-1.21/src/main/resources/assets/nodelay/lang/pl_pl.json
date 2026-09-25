@@ -12,5 +12,7 @@
   "nodelay.message.cat_on": "%s: włączony (opóźnienie %s ticków).",
   "nodelay.message.cat_off": "%s: wyłączony (vanilla %s ticków).",
   "nodelay.message.cat_delay_set": "%s: opóźnienie ustawione na %s ticków.",
-  "nodelay.message.reloaded": "Konfiguracja ponownie wczytana."
+  "nodelay.message.reloaded": "Konfiguracja ponownie wczytana.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s"
 }

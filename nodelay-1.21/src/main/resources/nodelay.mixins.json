@@ -3,7 +3,8 @@
 	"package": "com.example.nodelay.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"NoDelayMixin"
+		"NoDelayMixin",
+		"PauseScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

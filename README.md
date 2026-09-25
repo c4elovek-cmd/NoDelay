@@ -16,8 +16,11 @@ needed on the server.
 - Default: `blocks` and `villagers` enabled with `0` ticks; `entities` and
   `items` disabled (vanilla 4-tick delay)
 - In-game command `/nodelay` (on/off, reload, per-category on/off/delay)
+- Native settings GUI from vanilla widgets: a "NoDelay" button on the pause
+  screen opens it, and on Fabric/Quilt it is also wired into Mod Menu
+  (optional) plus a `N` keybind (Fabric 26.x only)
 - Config file: `config/nodelay.json` (auto-generated, clamped to `0..20`)
-- Optional dependency: Fabric API (for the `/nodelay` command on Fabric/Quilt only)
+- Optional dependency: Fabric API (for the `/nodelay` command and keybind on Fabric/Quilt only)
 - Localized into **14 languages**, follows your game language
 - Java 21+ for 1.21.x builds, Java 25+ for 26.x builds
 

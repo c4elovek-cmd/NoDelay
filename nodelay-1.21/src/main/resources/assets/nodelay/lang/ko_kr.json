@@ -12,5 +12,7 @@
   "nodelay.message.cat_on": "%s: 활성화 (지연 %s 틱).",
   "nodelay.message.cat_off": "%s: 비활성화 (바닐라 %s 틱).",
   "nodelay.message.cat_delay_set": "%s: 지연이 %s 틱으로 설정되었습니다.",
-  "nodelay.message.reloaded": "구성을 다시 불러왔습니다."
+  "nodelay.message.reloaded": "구성을 다시 불러왔습니다.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s"
 }

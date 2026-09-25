@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "nodelay",
+	"version": "${version}",
+	"name": "NoDelay",
+	"description": "Selectively removes the vanilla 4 tick right-click delay (Minecraft#rightClickDelay). Separate settings for placing blocks, trading with villagers, other entities and using items in the air. Each category is configurable from 0 to 20 ticks (vanilla is 4) via config/nodelay.json. Client-side only. Localized into 14 languages.",
+	"authors": [
+		"Stepan"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/nodelay/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.nodelay.NoDelayQuilt"
+		]
+	},
+	"mixins": [
+		"nodelay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": ">=26.1 <=26.3",
+		"java": ">=25"
+	}
+}

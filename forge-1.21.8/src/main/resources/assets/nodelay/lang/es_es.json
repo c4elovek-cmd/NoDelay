@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "activado",
+    "nodelay.state.off": "desactivado",
+    "nodelay.cat.blocks": "Colocación y uso de bloques",
+    "nodelay.cat.villagers": "Comercio con aldeanos",
+    "nodelay.cat.entities": "Otras entidades",
+    "nodelay.cat.items": "Objetos en el aire",
+    "nodelay.message.status": "NoDelay: %s",
+    "nodelay.message.cat_line": "%s: %s (%s ticks)",
+    "nodelay.message.enabled": "NoDelay activado.",
+    "nodelay.message.disabled": "NoDelay desactivado. Se restaura el retardo vainilla de %s ticks.",
+    "nodelay.message.cat_on": "%s: activado (retardo %s ticks).",
+    "nodelay.message.cat_off": "%s: desactivado (vainilla %s ticks).",
+    "nodelay.message.cat_delay_set": "%s: retardo establecido en %s ticks.",
+    "nodelay.message.reloaded": "Configuración recargada.",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}

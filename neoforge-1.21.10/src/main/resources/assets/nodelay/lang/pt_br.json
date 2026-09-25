@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "ativado",
+    "nodelay.state.off": "desativado",
+    "nodelay.cat.blocks": "Colocação e uso de blocos",
+    "nodelay.cat.villagers": "Comércio com aldeões",
+    "nodelay.cat.entities": "Outras entidades",
+    "nodelay.cat.items": "Itens no ar",
+    "nodelay.message.status": "NoDelay: %s",
+    "nodelay.message.cat_line": "%s: %s (%s ticks)",
+    "nodelay.message.enabled": "NoDelay ativado.",
+    "nodelay.message.disabled": "NoDelay desativado. O atraso vanilla de %s ticks voltou.",
+    "nodelay.message.cat_on": "%s: ativado (atraso %s ticks).",
+    "nodelay.message.cat_off": "%s: desativado (vanilla %s ticks).",
+    "nodelay.message.cat_delay_set": "%s: atraso definido para %s ticks.",
+    "nodelay.message.reloaded": "Configuração recarregada.",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}

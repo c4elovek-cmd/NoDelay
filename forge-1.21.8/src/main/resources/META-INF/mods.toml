@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[0,)"
+license="CC0-1.0"
+clientSideOnly=true
+
+[[mods]]
+modId="nodelay"
+version="2.1.0"
+displayName="NoDelay"
+authors="StepanZhilkov"
+description='''Selectively removes the vanilla 4 tick right-click delay (Minecraft#rightClickDelay). Separate settings for placing blocks, trading with villagers, other entities and using items in the air. Each category is configurable from 0 to 20 ticks (vanilla is 4) via config/nodelay.json. Client-side only, no Fabric API needed. Localized into 14 languages.'''
+
+[[dependencies.nodelay]]
+    modId="forge"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.nodelay]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.8]"
+    ordering="NONE"
+    side="CLIENT"

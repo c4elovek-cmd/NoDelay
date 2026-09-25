@@ -1,0 +1,38 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"id": "nodelay",
+		"version": "${version}",
+		"name": "NoDelay",
+		"description": "Selectively removes the vanilla 4 tick right-click delay (Minecraft#rightClickDelay). Separate settings for placing blocks, trading with villagers, other entities and using items in the air. Each category is configurable from 0 to 20 ticks (vanilla is 4) via config/nodelay.json. Client-side only. Localized into 14 languages.",
+		"authors": [
+			"Stepan"
+		],
+		"license": "CC0-1.0",
+		"icon": "assets/nodelay/icon.png",
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"environment": "client",
+		"entrypoints": {
+			"client_init": [
+				"com.example.nodelay.NoDelayQuilt"
+			]
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.25.0"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=26.1 <=26.3"
+			},
+			{
+				"id": "java",
+				"versions": ">=25"
+			}
+		]
+	},
+	"mixin": [
+		"nodelay.mixins.json"
+	]
+}

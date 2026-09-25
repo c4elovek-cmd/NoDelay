@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "開啟",
+    "nodelay.state.off": "關閉",
+    "nodelay.cat.blocks": "放置與使用方塊",
+    "nodelay.cat.villagers": "與村民交易",
+    "nodelay.cat.entities": "其他實體",
+    "nodelay.cat.items": "空中使用物品",
+    "nodelay.message.status": "NoDelay：%s",
+    "nodelay.message.cat_line": "%s：%s（%s 遊戲刻）",
+    "nodelay.message.enabled": "已啟用 NoDelay。",
+    "nodelay.message.disabled": "已停用 NoDelay。恢復原版 %s 遊戲刻延遲。",
+    "nodelay.message.cat_on": "%s：已啟用（延遲 %s 遊戲刻）。",
+    "nodelay.message.cat_off": "%s：已停用（原版 %s 遊戲刻）。",
+    "nodelay.message.cat_delay_set": "%s：延遲已設為 %s 遊戲刻。",
+    "nodelay.message.reloaded": "設定已重新載入。",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}

@@ -12,5 +12,7 @@
   "nodelay.message.cat_on": "%s: увімкнено (затримка %s тік(ів)).",
   "nodelay.message.cat_off": "%s: вимкнено (ванільні %s тік(ів)).",
   "nodelay.message.cat_delay_set": "%s: затримка %s тік(ів).",
-  "nodelay.message.reloaded": "Конфігурацію перечитано."
+  "nodelay.message.reloaded": "Конфігурацію перечитано.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s"
 }

@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s: включено (задержка %s тик(ов)).",
   "nodelay.message.cat_off": "%s: выключено (ванильные %s тик(ов)).",
   "nodelay.message.cat_delay_set": "%s: задержка %s тик(ов).",
-  "nodelay.message.reloaded": "Конфиг перечитан."
+  "nodelay.message.reloaded": "Конфиг перечитан.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "Открыть настройки NoDelay"
 }

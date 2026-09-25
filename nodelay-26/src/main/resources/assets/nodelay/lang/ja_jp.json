@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s: 有効 (遅延 %s ティック)。",
   "nodelay.message.cat_off": "%s: 無効 (バニラ %s ティック)。",
   "nodelay.message.cat_delay_set": "%s: 遅延を %s ティックに設定しました。",
-  "nodelay.message.reloaded": "設定を再読み込みしました。"
+  "nodelay.message.reloaded": "設定を再読み込みしました。",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "NoDelayの設定を開く"
 }

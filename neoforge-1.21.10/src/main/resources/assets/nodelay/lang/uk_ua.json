@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "увімк.",
+    "nodelay.state.off": "вимк.",
+    "nodelay.cat.blocks": "Встановлення блоків і використання по блоку",
+    "nodelay.cat.villagers": "Торгівля з селянами",
+    "nodelay.cat.entities": "Інші істоти",
+    "nodelay.cat.items": "Предмети в повітрі",
+    "nodelay.message.status": "NoDelay: %s",
+    "nodelay.message.cat_line": "%s: %s (затримка %s тік(ів))",
+    "nodelay.message.enabled": "NoDelay увімкнено.",
+    "nodelay.message.disabled": "NoDelay вимкнено — ванільну затримку в %s тік(ів) відновлено.",
+    "nodelay.message.cat_on": "%s: увімкнено (затримка %s тік(ів)).",
+    "nodelay.message.cat_off": "%s: вимкнено (ванільні %s тік(ів)).",
+    "nodelay.message.cat_delay_set": "%s: затримка %s тік(ів).",
+    "nodelay.message.reloaded": "Конфігурацію перечитано.",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}

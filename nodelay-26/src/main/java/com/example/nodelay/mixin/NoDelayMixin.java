@@ -39,13 +39,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  */
 @Mixin(Minecraft.class)
 public class NoDelayMixin {
-	@Shadow
+	// 26.2 не обфусцирован: официальные имена уже являются рантайм-именами, рефмапа нет.
+	// remap = false запрещает Mixin искать члены в "обфусцированных" именах.
+	@Shadow(remap = false)
 	private int rightClickDelay;
 
-	@Shadow
+	@Shadow(remap = false)
 	public HitResult hitResult;
 
-	@Inject(method = "startUseItem",
+	@Inject(method = "startUseItem", remap = false,
 			at = @At(value = "FIELD",
 					target = "Lnet/minecraft/client/Minecraft;rightClickDelay:I",
 					opcode = Opcodes.PUTFIELD,
@@ -57,7 +59,7 @@ public class NoDelayMixin {
 		}
 
 		int delay = NoDelayConfig.VANILLA_DELAY;
-		if (this.hitResult instanceof BlockHitResult) {
+		if (this.hitResult instanceof BlockHitResult blockHit) {
 			delay = config.delayFor(config.blocks);
 		} else if (this.hitResult instanceof EntityHitResult entityHit) {
 			if (entityHit.getEntity() instanceof Villager) {

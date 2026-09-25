@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s: açık (gecikme %s tick).",
   "nodelay.message.cat_off": "%s: kapalı (vanilya %s tick).",
   "nodelay.message.cat_delay_set": "%s: gecikme %s tick olarak ayarlandı.",
-  "nodelay.message.reloaded": "Yapılandırma yeniden yüklendi."
+  "nodelay.message.reloaded": "Yapılandırma yeniden yüklendi.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "NoDelay ayarlarını aç"
 }

@@ -1,0 +1,57 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+repositories {
+	maven {
+		name = 'Quilt'
+		url = 'https://maven.quiltmc.org/repository/release/'
+	}
+	// sponge-mixin (не поставляется quilt-loader в compile classpath) живёт на fabric maven
+	maven {
+		name = 'Fabric'
+		url = 'https://maven.fabricmc.net/'
+	}
+}
+
+loom {
+	mods {
+		"nodelay" {
+			sourceSet sourceSets.main
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	// Quilt Loader bundles the fabric-loader API classes (net.fabricmc.loader.api.*),
+	// so the same vanilla-only mixin source compiles against it and the mod runs
+	// natively on Quilt (quilt-loader accepts fabric.mod.json). No fabric-api needed.
+	implementation "org.quiltmc:quilt-loader:${project.loader_version}"
+	// Quilt Loader подтягивает mixin как внешнюю библиотеку только в рантайме.
+	// Для компиляции миксина кладём его на compile classpath. Рефмап не нужен:
+	// 26.x не обфусцирован, имена в mixin уже ванильные.
+	compileOnly "net.fabricmc:sponge-mixin:0.17.4+mixin.0.8.7"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+	filesMatching("quilt.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}

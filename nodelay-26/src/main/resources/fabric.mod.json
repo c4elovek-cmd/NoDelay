@@ -13,6 +13,9 @@
 	"entrypoints": {
 		"client": [
 			"com.example.nodelay.NoDelayClient"
+		],
+		"modmenu": [
+			"com.example.nodelay.integration.ModMenuIntegration"
 		]
 	},
 	"mixins": [

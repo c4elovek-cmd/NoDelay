@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s：已啟用（延遲 %s 遊戲刻）。",
   "nodelay.message.cat_off": "%s：已停用（原版 %s 遊戲刻）。",
   "nodelay.message.cat_delay_set": "%s：延遲已設為 %s 遊戲刻。",
-  "nodelay.message.reloaded": "設定已重新載入。"
+  "nodelay.message.reloaded": "設定已重新載入。",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "開啟 NoDelay 設定"
 }

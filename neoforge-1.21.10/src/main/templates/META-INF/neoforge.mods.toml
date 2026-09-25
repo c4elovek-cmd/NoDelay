@@ -1,0 +1,29 @@
+license="${mod_license}"
+
+#issueTrackerURL="https://example.invalid/issues"
+
+[[mods]]
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+#logoFile="nodelay.png" # set via assets icon
+authors="Stepan"
+description='''Selectively removes the vanilla 4 tick right-click delay (Minecraft#rightClickDelay) that limits how fast you can act while holding the use button. Separate settings for placing blocks, trading with villagers, other entities and using items in the air. Each category is configurable from 0 to 20 ticks (vanilla is 4) via config/nodelay.json. Client-side only.'''
+
+#declare the mixin config to FML so it gets loaded
+[[mixins]]
+config="nodelay.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

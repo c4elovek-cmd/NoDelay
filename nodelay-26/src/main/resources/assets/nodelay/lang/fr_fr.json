@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s : activé (délai %s ticks).",
   "nodelay.message.cat_off": "%s : désactivé (vanille %s ticks).",
   "nodelay.message.cat_delay_set": "%s : délai défini à %s ticks.",
-  "nodelay.message.reloaded": "Configuration rechargée."
+  "nodelay.message.reloaded": "Configuration rechargée.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "Ouvrir les paramètres de NoDelay"
 }

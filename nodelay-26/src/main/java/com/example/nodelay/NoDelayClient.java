@@ -30,13 +30,14 @@ public class NoDelayClient implements ClientModInitializer {
 				config.delayFor(config.entities),
 				config.delayFor(config.items));
 
-		// Команде /nodelay нужен Fabric API. На класс NoDelayCommands мы ссылаемся — и значит
-		// загружаем его — только при наличии Fabric API, поэтому jar продолжает работать и без
-		// него (тогда конфиг правится в config/nodelay.json).
+		// Команде /nodelay и хоткею нужен Fabric API. На классы NoDelayCommands/NoDelayKeybind мы
+		// ссылаемся — и значит загружаем их — только при наличии Fabric API, поэтому jar продолжает
+		// работать и без него (тогда конфиг правится в config/nodelay.json или кнопкой на паузе).
 		if (FabricLoader.getInstance().isModLoaded("fabric-api")) {
 			NoDelayCommands.register();
+			NoDelayKeybind.register();
 		} else {
-			LOGGER.info("Fabric API not found - /nodelay command disabled, edit config/nodelay.json instead");
+			LOGGER.info("Fabric API not found - /nodelay command and hotkey disabled, edit config/nodelay.json instead");
 		}
 	}
 }

@@ -12,5 +12,7 @@
   "nodelay.message.cat_on": "%s：已启用（延迟 %s 游戏刻）。",
   "nodelay.message.cat_off": "%s：已禁用（原版 %s 游戏刻）。",
   "nodelay.message.cat_delay_set": "%s：延迟已设为 %s 游戏刻。",
-  "nodelay.message.reloaded": "配置已重新加载。"
+  "nodelay.message.reloaded": "配置已重新加载。",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s"
 }

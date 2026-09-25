@@ -20,6 +20,18 @@ dependencies {
 	// Fabric API: only used for the optional /nodelay client command.
 	// The mixin itself is vanilla-only, so the mod still works without Fabric API.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Mod Menu: optional integration. Installed into the local Maven repository because
+	// maven.terraformersmc.com is unreachable from this machine; modCompileOnly remaps the
+	// jar to our mappings and keeps the runtime free of hard dependencies (the entrypoint
+	// is loaded lazily by Mod Menu).
+	modCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
+}
+
+repositories {
+	mavenLocal()
+	maven { url = "https://api.modrinth.com/maven" }
+	maven { url = "https://maven.terraformersmc.com/releases" }
 }
 
 processResources {

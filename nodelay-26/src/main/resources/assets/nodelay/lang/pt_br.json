@@ -12,5 +12,8 @@
   "nodelay.message.cat_on": "%s: ativado (atraso %s ticks).",
   "nodelay.message.cat_off": "%s: desativado (vanilla %s ticks).",
   "nodelay.message.cat_delay_set": "%s: atraso definido para %s ticks.",
-  "nodelay.message.reloaded": "Configuração recarregada."
+  "nodelay.message.reloaded": "Configuração recarregada.",
+  "nodelay.gui.title": "NoDelay",
+  "nodelay.gui.master": "NoDelay: %s",
+    "key.nodelay.open": "Abrir as configurações do NoDelay"
 }

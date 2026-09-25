@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "вкл",
+    "nodelay.state.off": "выкл",
+    "nodelay.cat.blocks": "Установка блоков и использование по блоку",
+    "nodelay.cat.villagers": "Торговля с жителями",
+    "nodelay.cat.entities": "Другие существа",
+    "nodelay.cat.items": "Предметы в воздухе",
+    "nodelay.message.status": "NoDelay: %s",
+    "nodelay.message.cat_line": "%s: %s (задержка %s тик(ов))",
+    "nodelay.message.enabled": "NoDelay включён.",
+    "nodelay.message.disabled": "NoDelay выключен — ванильная задержка в %s тик(ов) восстановлена.",
+    "nodelay.message.cat_on": "%s: включено (задержка %s тик(ов)).",
+    "nodelay.message.cat_off": "%s: выключено (ванильные %s тик(ов)).",
+    "nodelay.message.cat_delay_set": "%s: задержка %s тик(ов).",
+    "nodelay.message.reloaded": "Конфиг перечитан.",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}

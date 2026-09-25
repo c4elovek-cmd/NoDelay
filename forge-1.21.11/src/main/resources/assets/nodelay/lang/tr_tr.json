@@ -1,0 +1,18 @@
+{
+    "nodelay.state.on": "açık",
+    "nodelay.state.off": "kapalı",
+    "nodelay.cat.blocks": "Blok yerleştirme ve kullanma",
+    "nodelay.cat.villagers": "Köylü ticareti",
+    "nodelay.cat.entities": "Diğer varlıklar",
+    "nodelay.cat.items": "Havadaki eşyalar",
+    "nodelay.message.status": "NoDelay: %s",
+    "nodelay.message.cat_line": "%s: %s (%s tick)",
+    "nodelay.message.enabled": "NoDelay açıldı.",
+    "nodelay.message.disabled": "NoDelay kapatıldı. Vanilya %s tick gecikmesi geri geldi.",
+    "nodelay.message.cat_on": "%s: açık (gecikme %s tick).",
+    "nodelay.message.cat_off": "%s: kapalı (vanilya %s tick).",
+    "nodelay.message.cat_delay_set": "%s: gecikme %s tick olarak ayarlandı.",
+    "nodelay.message.reloaded": "Yapılandırma yeniden yüklendi.",
+    "nodelay.gui.title": "NoDelay",
+    "nodelay.gui.master": "NoDelay: %s"
+}
