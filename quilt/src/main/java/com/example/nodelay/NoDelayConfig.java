@@ -33,7 +33,7 @@ public final class NoDelayConfig {
 	/** Upper bound accepted from the config (20 ticks = 1 second). */
 	public static final int MAX_DELAY = 20;
 	/** All categories, in the order printed by the mod. */
-	public static final String[] CATEGORIES = { "blocks", "villagers", "entities", "items" };
+	public static final String[] CATEGORIES = { "blocks", "villagers", "entities", "items", "elytra", "buckets", "crystals" };
 
 	private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 	private static final Logger LOGGER = LoggerFactory.getLogger("nodelay-config");
@@ -64,6 +64,12 @@ public final class NoDelayConfig {
 	public Category entities = disabled();
 	/** Using an item "in the air" (crosshair MISS): eating, shooting, throwing. */
 	public Category items = disabled();
+	/** Equipping or using an elytra by clicking in the air (holding {@code ELYTRA}). */
+	public Category elytra = new Category();
+	/** Water or lava bucket (holding {@code WATER_BUCKET}/{@code LAVA_BUCKET}). */
+	public Category buckets = new Category();
+	/** End crystal (holding {@code END_CRYSTAL}): fast crystal placing. */
+	public Category crystals = new Category();
 	// -----------------------------------------------------------------------
 
 	private static Category disabled() {
@@ -123,6 +129,12 @@ public final class NoDelayConfig {
 				return entities;
 			case "items":
 				return items;
+			case "elytra":
+				return elytra;
+			case "buckets":
+				return buckets;
+			case "crystals":
+				return crystals;
 			default:
 				return null;
 		}

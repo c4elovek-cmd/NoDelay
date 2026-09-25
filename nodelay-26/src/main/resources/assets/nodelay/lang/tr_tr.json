@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "Yapılandırma yeniden yüklendi.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "NoDelay ayarlarını aç"
+  "key.nodelay.open": "NoDelay ayarlarını aç",
+  "nodelay.cat.elytra": "Elytra",
+  "nodelay.cat.buckets": "Su ve lav kovaları",
+  "nodelay.cat.crystals": "End kristalleri"
 }

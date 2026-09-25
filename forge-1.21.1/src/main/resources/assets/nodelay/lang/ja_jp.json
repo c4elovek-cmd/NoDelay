@@ -14,5 +14,8 @@
     "nodelay.message.cat_delay_set": "%s: 遅延を %s ティックに設定しました。",
     "nodelay.message.reloaded": "設定を再読み込みしました。",
     "nodelay.gui.title": "NoDelay",
-    "nodelay.gui.master": "NoDelay: %s"
+    "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "エリトラ",
+  "nodelay.cat.buckets": "水と溶岩のバケツ",
+  "nodelay.cat.crystals": "エンドクリスタル"
 }

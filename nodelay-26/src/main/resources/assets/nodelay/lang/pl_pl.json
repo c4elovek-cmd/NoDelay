@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "Konfiguracja ponownie wczytana.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "Otwórz ustawienia NoDelay"
+  "key.nodelay.open": "Otwórz ustawienia NoDelay",
+  "nodelay.cat.elytra": "Elytry",
+  "nodelay.cat.buckets": "Wiadra z wodą i lawą",
+  "nodelay.cat.crystals": "Kryształy Endu"
 }

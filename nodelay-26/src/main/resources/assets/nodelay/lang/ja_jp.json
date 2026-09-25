@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "設定を再読み込みしました。",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "NoDelayの設定を開く"
+  "key.nodelay.open": "NoDelayの設定を開く",
+  "nodelay.cat.elytra": "エリトラ",
+  "nodelay.cat.buckets": "水と溶岩のバケツ",
+  "nodelay.cat.crystals": "エンドクリスタル"
 }

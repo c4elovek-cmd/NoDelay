@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/c4elovek-cmd/NoPlacementDelay/issues"
 
 [[mods]]
 modId="nodelay"
-version="2.1.0"
+version="2.2.0"
 displayName="NoDelay"
 logoFile="nodelay/icon.png"
 credits="Stepan"

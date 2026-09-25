@@ -18,9 +18,10 @@ import net.fabricmc.loader.api.FabricLoader;
  * а ПКМ обрабатывается заново только когда поле станет 0. Это и есть видимая «задержка между
  * двумя действиями», если держать правую кнопку мыши зажатой.
  *
- * <p>Задержка снимается выборочно, по категориям действия. Категория определяется по тому, на что
- * смотрит прицел ({@code Minecraft#hitResult}): блок — {@link #blocks}, сущность — житель или
- * другая — {@link #villagers}/{@link #entities}, «в пустоту» — {@link #items}.
+ * <p>Задержка снимается выборочно, по категориям действия. Категория определяется по предмету в руке
+ * (кристалл Энда — {@link #crystals}, ведро воды/лавы — {@link #buckets}, элитра — {@link #elytra})
+ * и по тому, на что смотрит прицел ({@code Minecraft#hitResult}): блок — {@link #blocks}, сущность —
+ * житель или другая — {@link #villagers}/{@link #entities}, «в пустоту» — {@link #items}.
  */
 public final class NoDelayConfig {
 	/** Ванильное значение из {@code Minecraft#startUseItem()}: 4 тика между двумя действиями. */
@@ -28,7 +29,7 @@ public final class NoDelayConfig {
 	/** Верхняя граница, принимаемая из конфига (20 тиков = 1 секунда). */
 	public static final int MAX_DELAY = 20;
 	/** Все категории в порядке вывода в {@code /nodelay}. */
-	public static final String[] CATEGORIES = { "blocks", "villagers", "entities", "items" };
+	public static final String[] CATEGORIES = { "blocks", "villagers", "entities", "items", "elytra", "buckets", "crystals" };
 
 	private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 	private static final String FILE_NAME = "nodelay.json";
@@ -58,6 +59,12 @@ public final class NoDelayConfig {
 	public Category entities = disabled();
 	/** Использование предмета «в воздухе» (прицел {code MISS}): еда, стрельба, бросание. */
 	public Category items = disabled();
+	/** Экипировка элитры кликом в воздухе (в руке {@code ELYTRA}). */
+	public Category elytra = new Category();
+	/** Ведро воды или лавы (в руке {@code WATER_BUCKET}/{@code LAVA_BUCKET}). */
+	public Category buckets = new Category();
+	/** Кристалл Энда (в руке {@code END_CRYSTAL}): быстрая установка кристаллов. */
+	public Category crystals = new Category();
 	// -----------------------------------------------------------------------
 
 	private static Category disabled() {
@@ -117,6 +124,12 @@ public final class NoDelayConfig {
 						return villagers;
 					case "entities":
 						return entities;
+					case "elytra":
+						return elytra;
+					case "buckets":
+						return buckets;
+					case "crystals":
+						return crystals;
 					default:
 						return items;
 				}

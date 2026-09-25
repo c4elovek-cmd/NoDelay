@@ -14,5 +14,8 @@
   "nodelay.message.cat_delay_set": "%s：延迟已设为 %s 游戏刻。",
   "nodelay.message.reloaded": "配置已重新加载。",
   "nodelay.gui.title": "NoDelay",
-  "nodelay.gui.master": "NoDelay: %s"
+  "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "鞘翅",
+  "nodelay.cat.buckets": "水/熔岩桶",
+  "nodelay.cat.crystals": "末地水晶"
 }

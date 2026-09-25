@@ -14,5 +14,8 @@
   "nodelay.message.cat_delay_set": "%s: atraso definido para %s ticks.",
   "nodelay.message.reloaded": "Configuração recarregada.",
   "nodelay.gui.title": "NoDelay",
-  "nodelay.gui.master": "NoDelay: %s"
+  "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "Élitros",
+  "nodelay.cat.buckets": "Baldes de água e lava",
+  "nodelay.cat.crystals": "Cristais do End"
 }

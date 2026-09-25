@@ -14,5 +14,8 @@
     "nodelay.message.cat_delay_set": "%s: 지연이 %s 틱으로 설정되었습니다.",
     "nodelay.message.reloaded": "구성을 다시 불러왔습니다.",
     "nodelay.gui.title": "NoDelay",
-    "nodelay.gui.master": "NoDelay: %s"
+    "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "겉날개",
+  "nodelay.cat.buckets": "물·용암 양동이",
+  "nodelay.cat.crystals": "엔드 수정"
 }

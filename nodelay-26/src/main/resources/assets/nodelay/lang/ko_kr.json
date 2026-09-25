@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "구성을 다시 불러왔습니다.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "NoDelay 설정 열기"
+  "key.nodelay.open": "NoDelay 설정 열기",
+  "nodelay.cat.elytra": "겉날개",
+  "nodelay.cat.buckets": "물·용암 양동이",
+  "nodelay.cat.crystals": "엔드 수정"
 }

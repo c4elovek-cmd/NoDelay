@@ -14,5 +14,8 @@
   "nodelay.message.cat_delay_set": "%s: gecikme %s tick olarak ayarlandı.",
   "nodelay.message.reloaded": "Yapılandırma yeniden yüklendi.",
   "nodelay.gui.title": "NoDelay",
-  "nodelay.gui.master": "NoDelay: %s"
+  "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "Elytra",
+  "nodelay.cat.buckets": "Su ve lav kovaları",
+  "nodelay.cat.crystals": "End kristalleri"
 }

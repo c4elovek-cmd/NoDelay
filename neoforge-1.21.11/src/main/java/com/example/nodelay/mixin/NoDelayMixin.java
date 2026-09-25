@@ -3,7 +3,10 @@ package com.example.nodelay.mixin;
 import com.example.nodelay.NoDelayConfig;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.npc.villager.Villager;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -30,9 +33,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * rightClickDelay:I}, right after it), not {@code @At("TAIL")}: {@code startUseItem()} has
  * several early {@code return}s, so this fires on every code path.
  *
- * <p>The action category comes from {@code Minecraft#hitResult}: block - placing blocks,
- * entity - villager or "other entity", empty - using an item. Each category delay comes
- * from {@link NoDelayConfig}; a disabled category keeps the vanilla 4 ticks.
+ * <p>The action category comes from the held item (end crystal, bucket, elytra) and from
+ * {@code Minecraft#hitResult}: block - placing blocks, entity - villager or "other entity",
+ * empty - using an item. Each category delay comes from {@link NoDelayConfig}; a disabled
+ * category keeps the vanilla 4 ticks.
  *
  * <p>Named after the mod on purpose: several mods also have a {@code MinecraftMixin} mixin,
  * and a distinct name keeps the Mixin log readable.
@@ -45,6 +49,9 @@ public class NoDelayMixin {
 	@Shadow
 	public HitResult hitResult;
 
+	@Shadow
+	public LocalPlayer player;
+
 	@Inject(method = "startUseItem",
 			at = @At(value = "FIELD",
 					target = "Lnet/minecraft/client/Minecraft;rightClickDelay:I",
@@ -52,12 +59,19 @@ public class NoDelayMixin {
 					shift = At.Shift.AFTER))
 	private void nodelay$overrideDelay(CallbackInfo ci) {
 		NoDelayConfig config = NoDelayConfig.get();
-		if (!config.enabled) {
+		if (!config.enabled || this.player == null) {
 			return;
 		}
 
 		int delay = NoDelayConfig.VANILLA_DELAY;
-		if (this.hitResult instanceof BlockHitResult) {
+		ItemStack stack = this.player.getMainHandItem();
+		if (stack.is(Items.END_CRYSTAL)) {
+			delay = config.delayFor(config.crystals);
+		} else if (stack.is(Items.WATER_BUCKET) || stack.is(Items.LAVA_BUCKET)) {
+			delay = config.delayFor(config.buckets);
+		} else if (stack.is(Items.ELYTRA)) {
+			delay = config.delayFor(config.elytra);
+		} else if (this.hitResult instanceof BlockHitResult) {
 			delay = config.delayFor(config.blocks);
 		} else if (this.hitResult instanceof EntityHitResult entityHit) {
 			if (entityHit.getEntity() instanceof Villager) {

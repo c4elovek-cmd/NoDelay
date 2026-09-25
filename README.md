@@ -2,7 +2,8 @@
 
 Client-side Minecraft mod that selectively removes the vanilla right-click
 delay (`Minecraft#rightClickDelay`). Instead of one global switch you get
-**per-category control**: blocks, villagers, entities and items.
+**per-category control**: blocks, villagers, entities, items, elytra, buckets
+and end crystals.
 
 Works on **Fabric, Quilt, Forge and NeoForge** for Minecraft **26.1-26.3**
 and **1.21-1.21.11**. Client-side only - works on vanilla servers, nothing
@@ -11,10 +12,16 @@ needed on the server.
 ## Features
 
 - Removes the placement delay per category (each `0-20` ticks, vanilla is `4`)
-- Categories: `blocks` (placing), `villagers` (trading/hiring), `entities`
-  (buttons, loot, doors...), `items` (using items in air)
-- Default: `blocks` and `villagers` enabled with `0` ticks; `entities` and
-  `items` disabled (vanilla 4-tick delay)
+- Categories:
+  - `blocks` (placing blocks, using items against a block)
+  - `villagers` (trading/hiring)
+  - `entities` (buttons, loot, doors...)
+  - `items` (using items in the air - food, bows, throwing)
+  - `elytra` (equipping the elytra with a click in the air)
+  - `buckets` (placing water/lava from a bucket)
+  - `crystals` (fast end crystal placing - Crystal PvP)
+- Default: `blocks`, `villagers`, `elytra`, `buckets` and `crystals` enabled
+  with `0` ticks; `entities` and `items` disabled (vanilla 4-tick delay)
 - In-game command `/nodelay` (on/off, reload, per-category on/off/delay)
 - Native settings GUI from vanilla widgets: a "NoDelay" button on the pause
   screen opens it, and on Fabric/Quilt it is also wired into Mod Menu
@@ -45,7 +52,10 @@ needed on the server.
     "blocks":    { "enabled": true,  "delay": 0 },
     "villagers": { "enabled": true,  "delay": 0 },
     "entities":  { "enabled": false, "delay": 4 },
-    "items":     { "enabled": false, "delay": 4 }
+    "items":     { "enabled": false, "delay": 4 },
+    "elytra":    { "enabled": true,  "delay": 0 },
+    "buckets":   { "enabled": true,  "delay": 0 },
+    "crystals":  { "enabled": true,  "delay": 0 }
   }
 }
 ```
@@ -56,8 +66,8 @@ needed on the server.
 /nodelay                               show current state
 /nodelay on|off                        enable / disable everything
 /nodelay reload                        re-read the config file
-/nodelay blocks|villagers|entities|items on|off
-/nodelay blocks|villagers|entities|items delay <0-20>
+/nodelay blocks|villagers|entities|items|elytra|buckets|crystals on|off
+/nodelay blocks|villagers|entities|items|elytra|buckets|crystals delay <0-20>
 ```
 
 ## How it works
@@ -68,10 +78,11 @@ reaches `0` - that is the "delay" you feel between two block placements.
 
 A tiny Mixin (`NoDelayMixin`) is hooked right onto that field write
 (`PUTFIELD rightClickDelay:I`, immediately after it) and overwrites it with
-the configured value. The target category is chosen from the current `hitResult`
-(a block, a villager, another entity, or air). The hook is placed on the field
-write rather than on the method's tail because `startUseItem()` has several
-early returns.
+the configured value. The target category is chosen from the held item
+(end crystal -> `crystals`, water/lava bucket -> `buckets`, elytra -> `elytra`)
+and from the current `hitResult` (a block, a villager, another entity, or air).
+The hook is placed on the field write rather than on the method's tail because
+`startUseItem()` has several early returns.
 
 ## Build
 

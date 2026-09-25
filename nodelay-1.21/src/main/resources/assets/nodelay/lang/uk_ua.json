@@ -14,5 +14,8 @@
   "nodelay.message.cat_delay_set": "%s: затримка %s тік(ів).",
   "nodelay.message.reloaded": "Конфігурацію перечитано.",
   "nodelay.gui.title": "NoDelay",
-  "nodelay.gui.master": "NoDelay: %s"
+  "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "Елітри",
+  "nodelay.cat.buckets": "Відро води й лави",
+  "nodelay.cat.crystals": "Кристали Енду"
 }

@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "配置已重新加载。",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "打开 NoDelay 设置"
+  "key.nodelay.open": "打开 NoDelay 设置",
+  "nodelay.cat.elytra": "鞘翅",
+  "nodelay.cat.buckets": "水/熔岩桶",
+  "nodelay.cat.crystals": "末地水晶"
 }

@@ -3,7 +3,10 @@ package com.example.nodelay.mixin;
 import com.example.nodelay.NoDelayConfig;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.npc.villager.Villager;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -30,9 +33,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * после неё), а не на {@code @At("TAIL")}: у {@code startUseItem()} несколько ранних
  * {@code return}, и так хук срабатывает при любом пути выполнения метода.
  *
- * <p>Категория действия определяется по {@code Minecraft#hitResult}: блок — установка блоков,
- * сущность — житель или «другая сущность», пустота — использование предмета. Задержка каждой
- * категории берётся из {@link NoDelayConfig}; выключенная категория возвращает ванильные 4 тика.
+ * <p>Категория действия определяется по предмету в главной руке (кристалл, ведро, элитра) и по
+ * {@code Minecraft#hitResult}: блок — установка блоков, сущность — житель или «другая сущность»,
+ * пустота — использование предмета. Задержка каждой категории берётся из {@link NoDelayConfig};
+ * выключенная категория возвращает ванильные 4 тика.
  *
  * <p>Класс назван по моду специально: в нескольких модулях Fabric API тоже есть миксин
  * {@code MinecraftMixin}, а отдельное имя делает лог Mixin читаемым.
@@ -47,6 +51,9 @@ public class NoDelayMixin {
 	@Shadow(remap = false)
 	public HitResult hitResult;
 
+	@Shadow(remap = false)
+	public LocalPlayer player;
+
 	@Inject(method = "startUseItem", remap = false,
 			at = @At(value = "FIELD",
 					target = "Lnet/minecraft/client/Minecraft;rightClickDelay:I",
@@ -54,12 +61,19 @@ public class NoDelayMixin {
 					shift = At.Shift.AFTER))
 	private void nodelay$overrideDelay(CallbackInfo ci) {
 		NoDelayConfig config = NoDelayConfig.get();
-		if (!config.enabled) {
+		if (!config.enabled || this.player == null) {
 			return;
 		}
 
 		int delay = NoDelayConfig.VANILLA_DELAY;
-		if (this.hitResult instanceof BlockHitResult blockHit) {
+		ItemStack stack = this.player.getMainHandItem();
+		if (stack.is(Items.END_CRYSTAL)) {
+			delay = config.delayFor(config.crystals);
+		} else if (stack.is(Items.WATER_BUCKET) || stack.is(Items.LAVA_BUCKET)) {
+			delay = config.delayFor(config.buckets);
+		} else if (stack.is(Items.ELYTRA)) {
+			delay = config.delayFor(config.elytra);
+		} else if (this.hitResult instanceof BlockHitResult blockHit) {
 			delay = config.delayFor(config.blocks);
 		} else if (this.hitResult instanceof EntityHitResult entityHit) {
 			if (entityHit.getEntity() instanceof Villager) {

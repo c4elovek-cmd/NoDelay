@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "Configurazione ricaricata.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "Apri le impostazioni di NoDelay"
+  "key.nodelay.open": "Apri le impostazioni di NoDelay",
+  "nodelay.cat.elytra": "Elitre",
+  "nodelay.cat.buckets": "Secchi d'acqua e lava",
+  "nodelay.cat.crystals": "Cristalli dell'End"
 }

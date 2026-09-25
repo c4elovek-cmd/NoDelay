@@ -15,5 +15,8 @@
   "nodelay.message.reloaded": "Configuração recarregada.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
-    "key.nodelay.open": "Abrir as configurações do NoDelay"
+  "key.nodelay.open": "Abrir as configurações do NoDelay",
+  "nodelay.cat.elytra": "Élitros",
+  "nodelay.cat.buckets": "Baldes de água e lava",
+  "nodelay.cat.crystals": "Cristais do End"
 }

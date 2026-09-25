@@ -14,5 +14,8 @@
   "nodelay.message.cat_delay_set": "%s: Verzögerung auf %s Ticks gesetzt.",
   "nodelay.message.reloaded": "Konfiguration neu geladen.",
   "nodelay.gui.title": "NoDelay",
-  "nodelay.gui.master": "NoDelay: %s"
+  "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.cat.elytra": "Elytren",
+  "nodelay.cat.buckets": "Wasser- und Lavaeimer",
+  "nodelay.cat.crystals": "Endkristalle"
 }

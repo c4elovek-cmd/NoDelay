@@ -54,7 +54,7 @@ public class NoDelayScreen extends Screen {
 		int stepWidth = 20;
 		int rowWidth = toggleWidth + gap + stepWidth + gap + stepWidth;
 		int startX = centerX - rowWidth / 2;
-		int y = 44;
+		int y = 40;
 
 		this.masterButton = Button.builder(this.masterLabel(), button -> {
 			this.config.enabled = !this.config.enabled;
@@ -62,7 +62,7 @@ public class NoDelayScreen extends Screen {
 			this.refresh();
 		}).bounds(startX, y, rowWidth, 20).build();
 		this.addRenderableWidget(this.masterButton);
-		y += 28;
+		y += 24;
 
 		for (int i = 0; i < NoDelayConfig.CATEGORIES.length; i++) {
 			final int index = i;
@@ -92,7 +92,7 @@ public class NoDelayScreen extends Screen {
 			this.addRenderableWidget(this.categoryButtons[i]);
 			this.addRenderableWidget(this.minusButtons[i]);
 			this.addRenderableWidget(this.plusButtons[i]);
-			y += 28;
+			y += 24;
 		}
 
 		this.refresh();
