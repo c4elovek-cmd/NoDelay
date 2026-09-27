@@ -4,7 +4,11 @@
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"NoDelayMixin",
-		"PauseScreenMixin"
+		"PauseScreenMixin",
+		"ClientLevelMixin",
+		"EndCrystalMixin",
+		"LevelMixin",
+		"MultiPlayerGameModeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

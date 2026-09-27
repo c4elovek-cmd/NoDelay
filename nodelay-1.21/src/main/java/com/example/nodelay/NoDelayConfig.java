@@ -63,7 +63,10 @@ public final class NoDelayConfig {
 	public Category elytra = new Category();
 	/** Ведро воды или лавы (в руке {@code WATER_BUCKET}/{@code LAVA_BUCKET}). */
 	public Category buckets = new Category();
-	/** Кристалл Энда (в руке {@code END_CRYSTAL}): быстрая установка кристаллов. */
+	/** Кристалл Энда (в руке {@code END_CRYSTAL}): быстрая установка кристаллов. Заодно включает
+	 * кристальный оптимизатор (функция Marlow's Crystal Optimizer): разбитый кристалл исчезает
+	 * мгновенно, не дожидаясь ответа сервера, а прицел сразу переходит на следующую цель.
+	 */
 	public Category crystals = new Category();
 	// -----------------------------------------------------------------------
 

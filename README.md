@@ -20,6 +20,10 @@ needed on the server.
   - `elytra` (equipping the elytra with a click in the air)
   - `buckets` (placing water/lava from a bucket)
   - `crystals` (fast end crystal placing - Crystal PvP)
+- **Fast end crystal breaking** (Marlow's Crystal Optimizer-style): the moment
+  you hit a crystal it disappears client-side without waiting for the server's
+  removal packet, and the crosshair snaps to the next target instantly.
+  Vanilla-server safe, part of the `crystals` category, no server mod needed.
 - Default: `blocks`, `villagers`, `elytra`, `buckets` and `crystals` enabled
   with `0` ticks; `entities` and `items` disabled (vanilla 4-tick delay)
 - In-game command `/nodelay` (on/off, reload, per-category on/off/delay)
@@ -107,6 +111,10 @@ The resulting jar is placed in `build/libs/`.
 
 Licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) -
 do whatever you want with it.
+
+The fast crystal *breaking* optimizer is ported from
+[Marlow's Crystal Optimizer](https://modrinth.com/mod/marlows-crystal-optimizer)
+(MIT License, Copyright (c) Deathmotion & HypherionSA).
 
 ## Download
 
