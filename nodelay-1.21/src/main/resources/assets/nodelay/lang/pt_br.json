@@ -15,6 +15,13 @@
   "nodelay.message.reloaded": "Configuração recarregada.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.gui.cat.blocks": "Blocos",
+  "nodelay.gui.cat.villagers": "Aldeões",
+  "nodelay.gui.cat.entities": "Entidades",
+  "nodelay.gui.cat.items": "Itens",
+  "nodelay.gui.cat.elytra": "Élitros",
+  "nodelay.gui.cat.buckets": "Baldes",
+  "nodelay.gui.cat.crystals": "Cristais",
   "nodelay.cat.elytra": "Élitros",
   "nodelay.cat.buckets": "Baldes de água e lava",
   "nodelay.cat.crystals": "Cristais do End"

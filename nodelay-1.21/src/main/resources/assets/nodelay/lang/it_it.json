@@ -15,6 +15,13 @@
   "nodelay.message.reloaded": "Configurazione ricaricata.",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.gui.cat.blocks": "Blocchi",
+  "nodelay.gui.cat.villagers": "Villici",
+  "nodelay.gui.cat.entities": "Entità",
+  "nodelay.gui.cat.items": "Oggetti",
+  "nodelay.gui.cat.elytra": "Elitre",
+  "nodelay.gui.cat.buckets": "Secchi",
+  "nodelay.gui.cat.crystals": "Cristalli",
   "nodelay.cat.elytra": "Elitre",
   "nodelay.cat.buckets": "Secchi d'acqua e lava",
   "nodelay.cat.crystals": "Cristalli dell'End"

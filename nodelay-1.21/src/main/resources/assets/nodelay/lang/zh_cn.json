@@ -15,6 +15,13 @@
   "nodelay.message.reloaded": "配置已重新加载。",
   "nodelay.gui.title": "NoDelay",
   "nodelay.gui.master": "NoDelay: %s",
+  "nodelay.gui.cat.blocks": "方块",
+  "nodelay.gui.cat.villagers": "村民",
+  "nodelay.gui.cat.entities": "实体",
+  "nodelay.gui.cat.items": "物品",
+  "nodelay.gui.cat.elytra": "鞘翅",
+  "nodelay.gui.cat.buckets": "水桶",
+  "nodelay.gui.cat.crystals": "水晶",
   "nodelay.cat.elytra": "鞘翅",
   "nodelay.cat.buckets": "水/熔岩桶",
   "nodelay.cat.crystals": "末地水晶"

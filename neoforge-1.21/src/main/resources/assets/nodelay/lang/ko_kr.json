@@ -15,6 +15,13 @@
     "nodelay.message.reloaded": "구성을 다시 불러왔습니다.",
     "nodelay.gui.title": "NoDelay",
     "nodelay.gui.master": "NoDelay: %s",
+    "nodelay.gui.cat.blocks": "블록",
+    "nodelay.gui.cat.villagers": "주민",
+    "nodelay.gui.cat.entities": "개체",
+    "nodelay.gui.cat.items": "아이템",
+    "nodelay.gui.cat.elytra": "겉날개",
+    "nodelay.gui.cat.buckets": "양동이",
+    "nodelay.gui.cat.crystals": "수정",
   "nodelay.cat.elytra": "겉날개",
   "nodelay.cat.buckets": "물·용암 양동이",
   "nodelay.cat.crystals": "엔드 수정"

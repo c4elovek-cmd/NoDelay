@@ -111,7 +111,7 @@ public class NoDelayScreen extends Screen {
 			final String name = NoDelayConfig.CATEGORIES[i];
 
 			int textY = y + (this.rowHeight - this.font.lineHeight) / 2;
-			Component label = Component.translatable("nodelay.cat." + name);
+			Component label = this.categoryLabel(name);
 			int labelWidth = Math.min(nameWidth, this.measure(label));
 			if (labelWidth < this.measure(label)) {
 				label = Component.literal(this.font.plainSubstrByWidth(label.getString(), labelWidth));
@@ -208,6 +208,21 @@ public class NoDelayScreen extends Screen {
 	/** Ширина подписи в пикселях; меряется строка, чтобы не зависеть от версии {@code Component}. */
 	private int measure(Component text) {
 		return this.font.width(text.getString());
+	}
+
+	/**
+	 * Короткая подпись категории для этого экрана ({@code nodelay.gui.cat.*}) — вроде «Блоки» или
+	 * «Вёдра» вместо «Установка блоков и использование по блоку». Короткая строка помещается в любую
+	 * строку экрана, поэтому подпись почти никогда не приходится сокращать многоточием; полные
+	 * названия ({@code nodelay.cat.*}) остались в командах и файле конфига.
+	 *
+	 * <p>Если в языковом пакете (например, пользовательском) короткой подписи нет, Minecraft
+	 * возвращает сам ключ перевода — тогда берётся полное название, чтобы строка не осталась пустой.
+	 */
+	private Component categoryLabel(String name) {
+		String key = "nodelay.gui.cat." + name;
+		Component label = Component.translatable(key);
+		return label.getString().equals(key) ? Component.translatable("nodelay.cat." + name) : label;
 	}
 
 	/** Обновляет подписи после любого изменения конфига. */

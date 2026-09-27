@@ -15,6 +15,13 @@
     "nodelay.message.reloaded": "Config reloaded.",
     "nodelay.gui.title": "NoDelay",
     "nodelay.gui.master": "NoDelay: %s",
+    "nodelay.gui.cat.blocks": "Blocks",
+    "nodelay.gui.cat.villagers": "Villagers",
+    "nodelay.gui.cat.entities": "Entities",
+    "nodelay.gui.cat.items": "Items",
+    "nodelay.gui.cat.elytra": "Elytra",
+    "nodelay.gui.cat.buckets": "Buckets",
+    "nodelay.gui.cat.crystals": "Crystals",
   "nodelay.cat.elytra": "Elytra",
   "nodelay.cat.buckets": "Water & lava buckets",
   "nodelay.cat.crystals": "End crystals"

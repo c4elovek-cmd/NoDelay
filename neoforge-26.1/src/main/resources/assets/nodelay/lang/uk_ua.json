@@ -15,6 +15,13 @@
     "nodelay.message.reloaded": "Конфігурацію перечитано.",
     "nodelay.gui.title": "NoDelay",
     "nodelay.gui.master": "NoDelay: %s",
+    "nodelay.gui.cat.blocks": "Блоки",
+    "nodelay.gui.cat.villagers": "Селяни",
+    "nodelay.gui.cat.entities": "Істоти",
+    "nodelay.gui.cat.items": "Предмети",
+    "nodelay.gui.cat.elytra": "Елітри",
+    "nodelay.gui.cat.buckets": "Відра",
+    "nodelay.gui.cat.crystals": "Кристали",
   "nodelay.cat.elytra": "Елітри",
   "nodelay.cat.buckets": "Відро води й лави",
   "nodelay.cat.crystals": "Кристали Енду"

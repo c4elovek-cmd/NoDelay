@@ -15,6 +15,13 @@
     "nodelay.message.reloaded": "設定を再読み込みしました。",
     "nodelay.gui.title": "NoDelay",
     "nodelay.gui.master": "NoDelay: %s",
+    "nodelay.gui.cat.blocks": "ブロック",
+    "nodelay.gui.cat.villagers": "村人",
+    "nodelay.gui.cat.entities": "エンティティ",
+    "nodelay.gui.cat.items": "アイテム",
+    "nodelay.gui.cat.elytra": "エリトラ",
+    "nodelay.gui.cat.buckets": "バケツ",
+    "nodelay.gui.cat.crystals": "クリスタル",
   "nodelay.cat.elytra": "エリトラ",
   "nodelay.cat.buckets": "水と溶岩のバケツ",
   "nodelay.cat.crystals": "エンドクリスタル"

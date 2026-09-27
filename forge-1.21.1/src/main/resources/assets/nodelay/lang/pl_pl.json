@@ -15,6 +15,13 @@
     "nodelay.message.reloaded": "Konfiguracja ponownie wczytana.",
     "nodelay.gui.title": "NoDelay",
     "nodelay.gui.master": "NoDelay: %s",
+    "nodelay.gui.cat.blocks": "Bloki",
+    "nodelay.gui.cat.villagers": "Osadnicy",
+    "nodelay.gui.cat.entities": "Istoty",
+    "nodelay.gui.cat.items": "Przedmioty",
+    "nodelay.gui.cat.elytra": "Elytry",
+    "nodelay.gui.cat.buckets": "Wiadra",
+    "nodelay.gui.cat.crystals": "Kryształy",
   "nodelay.cat.elytra": "Elytry",
   "nodelay.cat.buckets": "Wiadra z wodą i lawą",
   "nodelay.cat.crystals": "Kryształy Endu"
